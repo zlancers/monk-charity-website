@@ -29,7 +29,7 @@ Please raise, a PR and don't merge it, until having a PR approved.
  Frontend 
 
 - [X] Setup React 
-- [ ] Setup Chakra @sujay
+- [X] Setup Chakra @sujay
 - [ ] Navbar Component @vardhan
 - [ ] Slider Component @vinayak
 
