@@ -35,8 +35,9 @@ Please raise, a PR and don't merge it, until having a PR approved.
 
  Backend 
 
-- [ ] Setup Laravel
-- [ ] Setup MySql
+- [X] Setup Laravel
+- [X] Setup MySql
+- [ ] Setup Manage Blog
 
 
 
