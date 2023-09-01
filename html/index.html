@@ -1,5 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
 
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
@@ -8,10 +10,13 @@
     <meta name="keywords" content="IndoAsianMettaFoundation">
     <meta name="robots" content="index, follow">
     <meta name="language" content="EN">
-  
+
     <script src="https://code.jquery.com/jquery.js"></script>
 
     <title> IndoAsianMettaFoundation</title>
+
+    <link href="./js/skdslider/skdslider.css" rel="stylesheet">
+    <script src="./js/skdslider/skdslider.min.js"></script>
 
     <style type="text/css">
         html,
@@ -127,25 +132,138 @@
             text-decoration: none;
             color: #fff;
         }
+
         .skdslider {
             margin-top: -100px;
         }
 
         .hero-slider {
+
             width: 100%;
             display: block;
             height: 500px;
             margin-top: -50px;
             z-index: -1;
             position: relative;
+
         }
 
         .hero-slider img {
             width: 100%;
+
+        }
+
+        /* Info */
+        .info-container {
+            display: flex;
+            width: 100%;
+            padding: 50px;
+            height: 600px;
+        }
+
+        .info-image {
+            padding: 10px;
+            width: 800px;
+            height: 500px;
+        }
+
+        .info-content {
+            padding: 30px;
+        }
+
+        .info-title {
+            font-size: 40px;
+        }
+
+        .info-subtitle {
+            font-size: 30px;
+        }
+
+        .info-button {
+            background-color: orange;
+            color: #111;
+            padding: 20px;
+            padding-left: 45px;
+            padding-right: 45px;
+            font-size: 30px;
+            border: 1px solid #fff;
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .welcome-container {
+            background-image: url('./images/slider-footer.png');
+            height: 200px;
+            margin-top: -130px;
+            opacity: 1;
+            z-index: 0;
+        }
+
+        .welcome-title {
+            font-size: 40px;
+            color: rgb(160, 106, 7);
+            padding-top: 120px;
+            padding-left: 100px;
+        }
+        .container {
+            padding-top: 50px;
+        }
+        .row {
+            height: auto;
+            display: flex;
+            width: 100%;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 45px;
+        }
+
+        .card {
+            border: 1px solid #111;
+            margin: 50px;
+            padding: 20px;
+        }
+
+        .card-cover {
+            border: 1px solid red;
+            height: 200px;
+        }
+
+        .card-cover-img {
+            width: 100%;
+            height: 200px;
+        }
+
+        .card-content {
+            font-size: 20px;
+        }
+
+        .card-footer {
+            border-top: 1px solid gainsboro;
+        }
+
+        footer {
+            width: 100%;
+            display: block;
+            height: 50px;
+            border: 1px solid yellow;
+        }
+        .footer-text {
+            text-align: center;
+        }
+      
+        .link-card {
+            background-color: yellow;
+            width: 400px;
+            text-align: center;
+        }
+        .sm-btn {
+            padding: 10px;
+            font-size: 20px;
         }
     </style>
-    <link href="./js/skdslider/skdslider.css" rel="stylesheet">
-    <script src="./js/skdslider/skdslider.min.js"></script>
 </head>
 
 <body>
@@ -206,7 +324,7 @@
                     <li>
                         <a href="/"> Examinations</a>
                     </li>
-                     <li>
+                    <li>
                         <a href="/"> Publications</a>
                     </li>
                     <li>
@@ -227,24 +345,202 @@
         <div class="slide">
             <img height="500" src="./images/hero-slider/slider2.png" />
         </div>
-         <div class="slide">
+        <div class="slide">
             <img height="500" src="./images/hero-slider/slider3.png" />
         </div>
-         <div class="slide">
+        <div class="slide">
             <img height="500" src="./images/hero-slider/slider4.png" />
         </div>
     </div>
+    <div class="welcome-container">
+        <h1 class="welcome-title"> Welcome to Indo Asian Metta Foundation </h1>
+    </div>
 
+    <section id="info">
+        <div class="info-container">
+            <div class="info-image">
+                <img src="./images/pics/1.png" />
+            </div>
+            <div class="info-content">
+                <h1 class="info-title"> Elderly Nuns & Monks Shelters</h1>
+                <p class="info-subtitle">
+                    At Indo Asian Metta Foundations, we believe in the power of compassion and respect for our elders.
+                    Our
+                    mission is to create a haven of solace for Elderly Buddhist Nuns & Monks, where their wisdom is
+                    honored
+                    and their needs are met with unconditional care.
+                </p>
+                <button class="info-button">
+                    Donate
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="infoSlider" id="infoSlider">
+            <div class="slide">
+                <img height="500" src="./images/info-slider/1.png" />
+            </div>
+            <div class="slide">
+                <img height="500" src="./images/info-slider/2.png" />
+            </div>
+            <div class="slide">
+                <img height="500" src="./images/info-slider/3.png" />
+            </div>
+            <div class="slide">
+                <img height="500" src="./images/info-slider/4.png" />
+            </div>
+            <div class="slide">
+                <img height="500" src="./images/info-slider/5.png" />
+            </div>
+            <div class="slide">
+                <img height="500" src="./images/info-slider/6.png" />
+            </div>
+            <div class="slide">
+                <img height="500" src="./images/info-slider/6.png" />
+            </div>
+            <div class="slide">
+                <img height="500" src="./images/info-slider/7.png" />
+            </div>
+            <div class="slide">
+                <img height="500" src="./images/info-slider/8.png" />
+            </div>
+            <div class="slide">
+                <img height="500" src="./images/info-slider/9.png" />
+            </div>
+            <div class="slide">
+                <img height="500" src="./images/info-slider/10.png" />
+            </div>
+            <div class="slide">
+                <img height="500" src="./images/info-slider/11.png" />
+            </div>
+            <div class="slide">
+                <img height="500" src="./images/info-slider/12.png" />
+            </div>
+            <div class="slide">
+                <img height="500" src="./images/info-slider/13.png" />
+            </div>
+        </div>
+    </section>
+
+    <section id="news">
+        <div class="container">
+            <h1 class="section-title"> Latest News </h1>
+            <div class="row">
+                <div class="card">
+                    <div class="card-cover">
+                        <img class="card-cover-img" src="./images/hero-slider/slider1.png" />
+                    </div>
+                    <div class="card-content">
+                        <h1> Economic Recovery Support</h1>
+                        <p> Embracing Aging with Grace Elderly Buddhist Nuns & Monks...</p>
+                    </div>
+                    <div class="card-footer">
+                        <h1> READ MORE >></h1>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-cover">
+                        <img class="card-cover-img" src="./images/hero-slider/slider1.png" />
+                    </div>
+                    <div class="card-content">
+                        <h1> Economic Recovery Support</h1>
+                        <p> Embracing Aging with Grace Elderly Buddhist Nuns & Monks...</p>
+                    </div>
+                    <div class="card-footer">
+                        <h1> READ MORE >></h1>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-cover">
+                        <img class="card-cover-img" src="./images/hero-slider/slider1.png" />
+                    </div>
+                    <div class="card-content">
+                        <h1> Economic Recovery Support</h1>
+                        <p> Embracing Aging with Grace Elderly Buddhist Nuns & Monks...</p>
+                    </div>
+                    <div class="card-footer">
+                        <h1> READ MORE >></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <div class="container">
+            <h1 class="section-title"> Gallery </h1>
+            <div class="row">
+                <div class="card">
+                    <div class="card-cover">
+                        <img class="card-cover-img" src="./images/hero-slider/slider2.png" />
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-cover">
+                        <img class="card-cover-img" src="./images/hero-slider/slider2.png" />
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta-cards">
+        <div class="container">
+            <div class="row">
+                <div class="card link-card">
+                    <div class="card-content">
+                        <h1 class="card-title"> Donation</h1>
+                        <p> Join hand with us</p>
+                        <button class="info-button sm-btn"> Click Here</button>
+                    </div>
+                </div>
+                <div class="card link-card">
+                    <div class="card-content">
+                        <h1 class="card-title"> Membership</h1>
+
+                        <p> Guidelines & Application</p>
+                        <button class="info-button sm-btn"> Click Here</button>
+                    </div>
+                </div>
+                <div class="card link-card">
+                    <div class="card-content">
+                        <h1 class="card-title"> Downloads </h1>
+
+
+                        <p> Click here to view all applications</p>
+                        <button class="info-button sm-btn"> Click Here</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <p class="footer-text"> All Rights Reserved.</p>
+    </footer>
 
     <script>
         $('#heroSlider').skdslider({
             slideSelector: '.slide',
-            delay:5000,
+            delay: 5000,
             animationSpeed: 500,
-            showNextPrev:true,
-            showPlayButton:true,
-            autoSlide:true,
-            animationType:'fading'
+            showNextPrev: true,
+            showPlayButton: true,
+            autoSlide: true,
+            animationType: 'fading'
+        });
+        $('#infoSlider').skdslider({
+            slideSelector: '.slide',
+            delay: 5000,
+            animationSpeed: 500,
+            showNextPrev: true,
+            showPlayButton: true,
+            autoSlide: true,
+            animationType: 'fading'
         });
     </script>
 </body>
