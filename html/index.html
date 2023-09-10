@@ -95,12 +95,11 @@
             width: auto;
             float: left;
             display: inline-flex;
-            height: 120px;
+            margin-top: -1rem;
         }
 
         .top-nav-menu {
             display: inline-flex;
-            padding-top: 50px;
         }
 
         .top-nav-menu li {
@@ -156,56 +155,47 @@
 
         }
 
-        /* Info */
 
-        #info {
-            display: flex;
-            justify-content: center;
-        }
-        .info-container {
-            display: flex;
-            width: 80%;
-            padding: 50px;
-            height: 500px;
-            gap:2rem;
-        }
 
-        .info-image {
-            width: 600px;
-            height: 400px;
-        }
+/* Info */
 
-        .info-image img {
-            width: 600px;
-            height: 400px;
-        }
-        
-        .info-content {
-            padding: 30px;
-            margin-top: -30px;
-        }
+.info-container {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0 9rem 0;
+}
 
-        .info-title {
-            font-size: 40px;
-        }
+.info-content {
+  display: flex;
+  justify-content: space-between;
+  width: 800px;
+  gap: 2rem;
+}
 
-        .info-subtitle {
-            font-size: 30px;
-        }
+.info-img {
+  width: 400px;
+  height: 250px;
+}
 
-        .info-button {
-            background-color: orange;
-            color: #fff;
-            padding: 20px;
-            padding-left: 100px;
-            padding-right: 100px;
-            font-size: 30px;
-            border: none;
-            cursor: pointer;
-            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            margin-left: 12rem;
-            margin-top: 2rem
-        }
+.info-img img{
+  width: 400px;
+  height: 250px;
+}
+.info-subtitle{
+  margin-top: 1rem;
+}
+
+.info-text button{
+  border: none;
+  padding: 0.5rem 1rem;
+  color: white;
+  background: orange;
+  margin-top: 1.5rem;
+  font-weight: bold;
+  border-radius: 2.5px;
+  margin-left: 5rem;
+}
+
 
         .welcome-container {
             background-image: url('./images/slider-footer.png');
@@ -361,6 +351,213 @@
 }
 
 
+/* Donations */
+
+.donation-container {
+    display: flex;
+    justify-content: center;
+    margin: 5rem;
+  }
+
+  .donation-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .donation-card {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    background: orange;
+    height: 200px;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    border-radius: 10px;
+  }
+
+    .donation-card button {
+      border: none;
+      padding: 0.5rem 1rem;
+      color: white;
+      background: #D35006;
+      margin-top: 0.75rem;
+      font-weight: bold;
+      border-radius: 2.5px;
+    }
+
+
+
+/* newsletter-subscribe */
+
+.newsletters-cantainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  background: orange;
+  height: 250px;
+}
+
+.newsletter-content {
+  display: flex;
+  margin: 3rem;
+  justify-content: space-around;
+  gap: 3rem;
+}
+.newsletter-left {
+  width: 400px;
+}
+.newsletter-left p{
+  color: white;
+}
+
+.newsletter-left h1{
+  color: white;
+  margin-top: 0.5rem;
+}
+
+.subscribe-form {
+  background: white;
+  margin-top: 2rem;
+  height: 3rem;
+  align-items: center;
+  display: flex;
+  border-radius: 5px;
+}
+
+.subscribe-form input {
+  outline: none;
+  width: 80%;
+  border: none;
+  padding-left: 1rem;
+  height: 3rem;
+}
+
+.subscribe-form button {
+  outline: none;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  margin-right: 0.25rem;
+  background: lightgreen;
+  color: white;
+  font-weight: bold;
+}
+
+.newsletter-right button{
+  outline: none;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  margin-right: 0.25rem;
+  background: lightgreen;
+  color: white;
+  font-weight: bold;
+  margin-top: 8.5rem;
+
+}
+
+/* foter */
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  background: black;
+  height: 300px;
+}
+
+.footer-content {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+}
+
+.footer-heading {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-weight: bold;
+}
+
+.footer-donate {
+  background: orange;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  height: 250px;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.footer-donate h1{
+  color: white;
+  font-weight: bold;
+  /* text-align: left; */
+}
+
+.footer-donate button {
+  outline: none;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  background: lightgreen;
+  color: white;
+  font-weight: bold;
+}
+
+.footer-links{
+ display: flex;
+  gap: 3rem;
+}
+.footer-links ul {
+  list-style: none;
+ display: block;
+ float: left;
+ text-align: left;
+}
+.footer-links ul li{
+  margin: 1rem;
+}
+.footer-links a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* Rights reserved */
+
+.rights-container {
+  display: flex;
+  justify-content: center;
+    background: #D35006;
+    height: 50px;
+    align-items: center;
+}
+
+.rights-content {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  margin: 0 3rem;
+}
+
+.copyright {
+  font-weight: bold;
+  color: white;
+    width: 45%;
+    text-align: left;
+}
+
+.social-links {
+  text-align: center;
+  display: flex;
+  gap: 1rem;
+}
+
+
 
 
 /* footer */
@@ -477,26 +674,24 @@
         <h1 class="welcome-title"> Welcome to Indo Asian Metta Foundation </h1>
     </div>
 
-    <section id="info">
-        <div class="info-container">
-            <div class="info-image">
-                <img src="./images/pics/1.png" />
-            </div>
-            <div class="info-content">
-                <h1 class="info-title"> Elderly Nuns & Monks Shelters</h1>
-                <p class="info-subtitle">
-                    At Indo Asian Metta Foundations, we believe in the power of compassion and respect for our elders.
-                    Our
-                    mission is to create a haven of solace for Elderly Buddhist Nuns & Monks, where their wisdom is
-                    honored
-                    and their needs are met with unconditional care.
-                </p>
-                <button class="info-button">
-                    Donate
-                </button>
-            </div>
+    <div class="info-container">
+        <div class="info-content">
+          <div class="info-img">
+            <img src="./images/pics/1.png" alt="">
+          </div>
+          <div class="info-text">
+            <h1 class="info-title"> Elderly Nuns & Monks Shelters</h1>
+              <p class="info-subtitle">
+                      At Indo Asian Metta Foundations, we believe in the power of compassion and respect for our elders.
+                      Our
+                      mission is to create a haven of solace for Elderly Buddhist Nuns & Monks, where their wisdom is
+                      honored
+                      and their needs are met with unconditional care.
+              </p>
+              <a href="#"><button type="button" name="button">Donate</button></a>
+          </div>
         </div>
-    </section>
+      </div>
 
     <section id="slider">
         <div class="infoSlider" id="infoSlider">
@@ -632,9 +827,99 @@
 
 <!-- Donations Card -->
 
-    <footer>
-        <p class="footer-text"> All Rights Reserved.</p>
-    </footer>
+<div class="donation-container">
+    <div class="donation-content">
+      <div class="donation-card">
+        <h1>Donations</h1>
+        <p>Join Hand Us</p>
+        <a href="#"><button type="button" name="button">Click Here</button></a>
+      </div>
+      <div class="donation-card">
+        <h1>Membership</h1>
+        <p>Guidelines & Applications</p>
+        <a href="#"><button type="button" name="button">Click Here</button></a>
+      </div>
+      <div class="donation-card">
+        <h1>Downloads</h1>
+        <p>Click here to view all application</p>
+        <a href="#"><button type="button" name="button">Click Here</button></a>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- newsletter -->
+
+  <div class="newsletters-cantainer">
+    <div class="newsletter-content">
+      <div class="newsletter-left">
+        <p>WorldWide non-profit charity</p>
+        <h1>Give a helping hand for needy People</h1>
+        <form class="">
+          <div class="subscribe-form">
+
+            <input type="email" name="" value="" placeholder="Your email">
+            <button type="button" name="button"> subscribe </button>
+          </div>
+
+        </form>
+      </div>
+      <div class="newsletter-right">
+        <a href="#"><button type="button" name="button">Show your Support</button></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+
+  <div class="footer-container">
+    <div class="footer-content">
+      <div class="footer-heading">
+        <h1>IndoAsianMettaFoundation</h1>
+        <p>#JoinTheMovement</p>
+      </div>
+      <div class="footer-donate">
+        <h1>Raise Money and help them</h1>
+        <a href="#"><button type="button" name="button">Donation ❤️</button></a>
+      </div>
+      <div class="footer-links">
+
+        <ul>
+          <li> <a href="#">Our Activities</a></li>
+          <li> <a href="#">Examinations</a> </li>
+          <li> <a href="#">Competitions</a> </li>
+          <li><a href="#">Library</a></li>
+        </ul>
+        <ul>
+          <li> <a href="#">Institution</a></li>
+          <li> <a href="#">Publications</a> </li>
+          <li> <a href="#">Projects</a> </li>
+          <li><a href="#">Downloads</a></li>
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- rights reserved -->
+
+  <div class="rights-container">
+    <div class="rights-content">
+      <div class="copyright">
+        <p>© Copyright 2023</p>
+      </div>
+      <div class="social-links">
+        <a href="#"><img src="./images/insta.svg" alt=""></a>
+        <a href="#"><img src="./images/fb.svg" alt=""></a>
+        <a href="#"><img src="./images/youtube.svg" alt=""></a>
+        <a href="#"><img src="./images/whatsapp.svg" alt=""></a>
+
+      </div>
+    </div>
+  </div>
+
 </div>
     <script>
         $('#heroSlider').skdslider({
