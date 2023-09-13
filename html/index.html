@@ -23,9 +23,12 @@
         body {
             margin: 0;
             padding: 0;
-            margin-top: -12px;
+            box-sizing: border-box;
         }
 
+        .content-container {
+            overflow: hidden;
+        }
         header {
             background-image: url('./images/header.png');
             height: 15em;
@@ -92,12 +95,11 @@
             width: auto;
             float: left;
             display: inline-flex;
-            height: 120px;
+            margin-top: -1rem;
         }
 
         .top-nav-menu {
             display: inline-flex;
-            padding-top: 50px;
         }
 
         .top-nav-menu li {
@@ -153,42 +155,47 @@
 
         }
 
-        /* Info */
-        .info-container {
-            display: flex;
-            width: 100%;
-            padding: 50px;
-            height: 600px;
-        }
 
-        .info-image {
-            padding: 10px;
-            width: 800px;
-            height: 500px;
-        }
 
-        .info-content {
-            padding: 30px;
-        }
+/* Info */
 
-        .info-title {
-            font-size: 40px;
-        }
+.info-container {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0 9rem 0;
+}
 
-        .info-subtitle {
-            font-size: 30px;
-        }
+.info-content {
+  display: flex;
+  justify-content: space-between;
+  width: 800px;
+  gap: 2rem;
+}
 
-        .info-button {
-            background-color: orange;
-            color: #111;
-            padding: 20px;
-            padding-left: 45px;
-            padding-right: 45px;
-            font-size: 30px;
-            border: 1px solid #fff;
-            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        }
+.info-img {
+  width: 400px;
+  height: 250px;
+}
+
+.info-img img{
+  width: 400px;
+  height: 250px;
+}
+.info-subtitle{
+  margin-top: 1rem;
+}
+
+.info-text button{
+  border: none;
+  padding: 0.5rem 1rem;
+  color: white;
+  background: orange;
+  margin-top: 1.5rem;
+  font-weight: bold;
+  border-radius: 2.5px;
+  margin-left: 5rem;
+}
+
 
         .welcome-container {
             background-image: url('./images/slider-footer.png');
@@ -204,7 +211,7 @@
             padding-top: 120px;
             padding-left: 100px;
         }
-        .container {
+        /* .container {
             padding-top: 50px;
         }
         .row {
@@ -218,16 +225,16 @@
         .section-title {
             text-align: center;
             font-size: 45px;
-        }
+        } */
 
-        .card {
+        /* .card {
             border: 1px solid #111;
             margin: 50px;
             padding: 20px;
         }
 
         .card-cover {
-            border: 1px solid red;
+            width: 100%;
             height: 200px;
         }
 
@@ -241,9 +248,319 @@
         }
 
         .card-footer {
-            border-top: 1px solid gainsboro;
+
+        } */
+
+        #slider {
+            margin-top: 100px;
         }
 
+        /* new article */
+
+        *{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.news-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.news-content {
+  display: flex;
+  flex-direction: column;
+}
+.news-blog{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.news-blog p{
+  font-size: 1rem;
+  font-weight: bold;
+
+}
+.news-blog hr {
+  width: 5rem;
+  height: 1px;
+  background: red;
+  margin-left: 1rem;
+  border: none;
+}
+
+.news-articles-heading{
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.news-articles-heading p {
+  font-size: 3rem;
+}
+
+.news-articles-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.article-card {
+  width: 350px;
+   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.article-card-img {
+  width: 348px;
+  overflow: hidden;
+  height: 200px;
+}
+.article-card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.article-card-comments {
+  display: flex;
+  gap:1rem;
+  padding: 1rem 2rem;
+  font-size: 0.85rem;
+}
+.article-card-heading{
+  font-size: 1.5rem;
+  padding: 0rem 2rem;
+
+}
+.article-card-readmore{
+  padding: 2rem 2rem;
+
+}
+.article-card-readmore p{
+  font-size: 0.65rem;
+  color: gray;
+  font-weight: bold;
+
+}
+
+.article-card-readmore span {
+  color: #FDBD44;
+  margin-right: 0.5rem
+}
+
+
+/* Donations */
+
+.donation-container {
+    display: flex;
+    justify-content: center;
+    margin: 5rem;
+  }
+
+  .donation-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .donation-card {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    background: orange;
+    height: 200px;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    border-radius: 10px;
+  }
+
+    .donation-card button {
+      border: none;
+      padding: 0.5rem 1rem;
+      color: white;
+      background: #D35006;
+      margin-top: 0.75rem;
+      font-weight: bold;
+      border-radius: 2.5px;
+    }
+
+
+
+/* newsletter-subscribe */
+
+.newsletters-cantainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  background: orange;
+  height: 250px;
+}
+
+.newsletter-content {
+  display: flex;
+  margin: 3rem;
+  justify-content: space-around;
+  gap: 3rem;
+}
+.newsletter-left {
+  width: 400px;
+}
+.newsletter-left p{
+  color: white;
+}
+
+.newsletter-left h1{
+  color: white;
+  margin-top: 0.5rem;
+}
+
+.subscribe-form {
+  background: white;
+  margin-top: 2rem;
+  height: 3rem;
+  align-items: center;
+  display: flex;
+  border-radius: 5px;
+}
+
+.subscribe-form input {
+  outline: none;
+  width: 80%;
+  border: none;
+  padding-left: 1rem;
+  height: 3rem;
+}
+
+.subscribe-form button {
+  outline: none;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  margin-right: 0.25rem;
+  background: lightgreen;
+  color: white;
+  font-weight: bold;
+}
+
+.newsletter-right button{
+  outline: none;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  margin-right: 0.25rem;
+  background: lightgreen;
+  color: white;
+  font-weight: bold;
+  margin-top: 8.5rem;
+
+}
+
+/* foter */
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  background: black;
+  height: 300px;
+}
+
+.footer-content {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+}
+
+.footer-heading {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-weight: bold;
+}
+
+.footer-donate {
+  background: orange;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  height: 250px;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.footer-donate h1{
+  color: white;
+  font-weight: bold;
+  /* text-align: left; */
+}
+
+.footer-donate button {
+  outline: none;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  background: lightgreen;
+  color: white;
+  font-weight: bold;
+}
+
+.footer-links{
+ display: flex;
+  gap: 3rem;
+}
+.footer-links ul {
+  list-style: none;
+ display: block;
+ float: left;
+ text-align: left;
+}
+.footer-links ul li{
+  margin: 1rem;
+}
+.footer-links a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* Rights reserved */
+
+.rights-container {
+  display: flex;
+  justify-content: center;
+    background: #D35006;
+    height: 50px;
+    align-items: center;
+}
+
+.rights-content {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  margin: 0 3rem;
+}
+
+.copyright {
+  font-weight: bold;
+  color: white;
+    width: 45%;
+    text-align: left;
+}
+
+.social-links {
+  text-align: center;
+  display: flex;
+  gap: 1rem;
+}
+
+
+
+
+/* footer */
         footer {
             width: 100%;
             display: block;
@@ -267,6 +584,7 @@
 </head>
 
 <body>
+    <div class="content-container" >
     <header>
         <div class="logo-container">
             <img src="./images/logo/logo.png" class="logo" />
@@ -356,28 +674,26 @@
         <h1 class="welcome-title"> Welcome to Indo Asian Metta Foundation </h1>
     </div>
 
-    <section id="info">
-        <div class="info-container">
-            <div class="info-image">
-                <img src="./images/pics/1.png" />
-            </div>
-            <div class="info-content">
-                <h1 class="info-title"> Elderly Nuns & Monks Shelters</h1>
-                <p class="info-subtitle">
-                    At Indo Asian Metta Foundations, we believe in the power of compassion and respect for our elders.
-                    Our
-                    mission is to create a haven of solace for Elderly Buddhist Nuns & Monks, where their wisdom is
-                    honored
-                    and their needs are met with unconditional care.
-                </p>
-                <button class="info-button">
-                    Donate
-                </button>
-            </div>
+    <div class="info-container">
+        <div class="info-content">
+          <div class="info-img">
+            <img src="./images/pics/1.png" alt="">
+          </div>
+          <div class="info-text">
+            <h1 class="info-title"> Elderly Nuns & Monks Shelters</h1>
+              <p class="info-subtitle">
+                      At Indo Asian Metta Foundations, we believe in the power of compassion and respect for our elders.
+                      Our
+                      mission is to create a haven of solace for Elderly Buddhist Nuns & Monks, where their wisdom is
+                      honored
+                      and their needs are met with unconditional care.
+              </p>
+              <a href="#"><button type="button" name="button">Donate</button></a>
+          </div>
         </div>
-    </section>
+      </div>
 
-    <section>
+    <section id="slider">
         <div class="infoSlider" id="infoSlider">
             <div class="slide">
                 <img height="500" src="./images/info-slider/1.png" />
@@ -425,104 +741,186 @@
     </section>
 
     <section id="news">
-        <div class="container">
-            <h1 class="section-title"> Latest News </h1>
-            <div class="row">
-                <div class="card">
-                    <div class="card-cover">
-                        <img class="card-cover-img" src="./images/hero-slider/slider1.png" />
-                    </div>
-                    <div class="card-content">
-                        <h1> Economic Recovery Support</h1>
-                        <p> Embracing Aging with Grace Elderly Buddhist Nuns & Monks...</p>
-                    </div>
-                    <div class="card-footer">
-                        <h1> READ MORE >></h1>
-                    </div>
+      
+        
+        <div class="news-container">
+            <div class="news-content">
+                <div class="news-blog">
+                    <p>Watch our latest blog</p>
+                    <hr>
                 </div>
-                <div class="card">
-                    <div class="card-cover">
-                        <img class="card-cover-img" src="./images/hero-slider/slider1.png" />
-                    </div>
-                    <div class="card-content">
-                        <h1> Economic Recovery Support</h1>
-                        <p> Embracing Aging with Grace Elderly Buddhist Nuns & Monks...</p>
-                    </div>
-                    <div class="card-footer">
-                        <h1> READ MORE >></h1>
-                    </div>
+                <div class="news-articles-heading">
+                    <P>Latest news & Articles</P>
                 </div>
-                <div class="card">
-                    <div class="card-cover">
-                        <img class="card-cover-img" src="./images/hero-slider/slider1.png" />
+                <div class="news-articles-cards">
+                    <div class="article-card">
+                        <div class="article-card-img">
+                            <img src="./images/pics/1.png" />
+                        </div>
+                        <div class="article-card-content">
+                            <div class="article-card-comments">
+                                <p><span>
+                                    <!-- profile image here -->
+                                </span>by Admin</p>
+                                <p><span>
+                                    <!-- comments image here -->
+                                </span> 02 comments</p>
+                            </div>
+                            <div class="article-card-heading">
+                                <p>Online legal advice asylum seekers in Greece</p>
+                            </div>
+                            <div class="article-card-readmore">
+                               <a> <p> <span> >> </span> READ MORE</p></a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-content">
-                        <h1> Economic Recovery Support</h1>
-                        <p> Embracing Aging with Grace Elderly Buddhist Nuns & Monks...</p>
+ 
+                    <!-- cards repetitive -->
+                    <div class="article-card">
+                        <div class="article-card-img">
+                            <img src="./images/pics/1.png" />
+                        </div>
+                        <div class="article-card-content">
+                            <div class="article-card-comments">
+                                <p><span>
+                                    <!-- profile image here -->
+                                </span>by Admin</p>
+                                <p><span>
+                                    <!-- comments image here -->
+                                </span> 02 comments</p>
+                            </div>
+                            <div class="article-card-heading">
+                                <p>Online legal advice asylum seekers in Greece</p>
+                            </div>
+                            <div class="article-card-readmore">
+                               <a> <p> <span> >></span> READ MORE</p></a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-footer">
-                        <h1> READ MORE >></h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="gallery">
-        <div class="container">
-            <h1 class="section-title"> Gallery </h1>
-            <div class="row">
-                <div class="card">
-                    <div class="card-cover">
-                        <img class="card-cover-img" src="./images/hero-slider/slider2.png" />
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-cover">
-                        <img class="card-cover-img" src="./images/hero-slider/slider2.png" />
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="cta-cards">
-        <div class="container">
-            <div class="row">
-                <div class="card link-card">
-                    <div class="card-content">
-                        <h1 class="card-title"> Donation</h1>
-                        <p> Join hand with us</p>
-                        <button class="info-button sm-btn"> Click Here</button>
-                    </div>
-                </div>
-                <div class="card link-card">
-                    <div class="card-content">
-                        <h1 class="card-title"> Membership</h1>
-
-                        <p> Guidelines & Application</p>
-                        <button class="info-button sm-btn"> Click Here</button>
-                    </div>
-                </div>
-                <div class="card link-card">
-                    <div class="card-content">
-                        <h1 class="card-title"> Downloads </h1>
-
-
-                        <p> Click here to view all applications</p>
-                        <button class="info-button sm-btn"> Click Here</button>
+                    <!-- 3rd card -->
+                    <div class="article-card">
+                        <div class="article-card-img">
+                            <img src="./images/pics/1.png" />
+                        </div>
+                        <div class="article-card-content">
+                            <div class="article-card-comments">
+                                <p><span>
+                                    <!-- profile image here -->
+                                </span>by Admin</p>
+                                <p><span>
+                                    <!-- comments image here -->
+                                </span> 02 comments</p>
+                            </div>
+                            <div class="article-card-heading">
+                                <p>Online legal advice asylum seekers in Greece</p>
+                            </div>
+                            <div class="article-card-readmore">
+                               <a> <p> <span> >></span> READ MORE</p></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+ 
         </div>
-
     </section>
 
-    <footer>
-        <p class="footer-text"> All Rights Reserved.</p>
-    </footer>
+<!-- Donations Card -->
 
+<div class="donation-container">
+    <div class="donation-content">
+      <div class="donation-card">
+        <h1>Donations</h1>
+        <p>Join Hand Us</p>
+        <a href="#"><button type="button" name="button">Click Here</button></a>
+      </div>
+      <div class="donation-card">
+        <h1>Membership</h1>
+        <p>Guidelines & Applications</p>
+        <a href="#"><button type="button" name="button">Click Here</button></a>
+      </div>
+      <div class="donation-card">
+        <h1>Downloads</h1>
+        <p>Click here to view all application</p>
+        <a href="#"><button type="button" name="button">Click Here</button></a>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- newsletter -->
+
+  <div class="newsletters-cantainer">
+    <div class="newsletter-content">
+      <div class="newsletter-left">
+        <p>WorldWide non-profit charity</p>
+        <h1>Give a helping hand for needy People</h1>
+        <form class="">
+          <div class="subscribe-form">
+
+            <input type="email" name="" value="" placeholder="Your email">
+            <button type="button" name="button"> subscribe </button>
+          </div>
+
+        </form>
+      </div>
+      <div class="newsletter-right">
+        <a href="#"><button type="button" name="button">Show your Support</button></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+
+  <div class="footer-container">
+    <div class="footer-content">
+      <div class="footer-heading">
+        <h1>IndoAsianMettaFoundation</h1>
+        <p>#JoinTheMovement</p>
+      </div>
+      <div class="footer-donate">
+        <h1>Raise Money and help them</h1>
+        <a href="#"><button type="button" name="button">Donation ❤️</button></a>
+      </div>
+      <div class="footer-links">
+
+        <ul>
+          <li> <a href="#">Our Activities</a></li>
+          <li> <a href="#">Examinations</a> </li>
+          <li> <a href="#">Competitions</a> </li>
+          <li><a href="#">Library</a></li>
+        </ul>
+        <ul>
+          <li> <a href="#">Institution</a></li>
+          <li> <a href="#">Publications</a> </li>
+          <li> <a href="#">Projects</a> </li>
+          <li><a href="#">Downloads</a></li>
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- rights reserved -->
+
+  <div class="rights-container">
+    <div class="rights-content">
+      <div class="copyright">
+        <p>© Copyright 2023</p>
+      </div>
+      <div class="social-links">
+        <a href="#"><img src="./images/insta.svg" alt=""></a>
+        <a href="#"><img src="./images/fb.svg" alt=""></a>
+        <a href="#"><img src="./images/youtube.svg" alt=""></a>
+        <a href="#"><img src="./images/whatsapp.svg" alt=""></a>
+
+      </div>
+    </div>
+  </div>
+
+</div>
     <script>
         $('#heroSlider').skdslider({
             slideSelector: '.slide',
