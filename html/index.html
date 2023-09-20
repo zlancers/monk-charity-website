@@ -17,6 +17,8 @@
 
     <link href="./js/skdslider/skdslider.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="./css/styles.css">
+
 
     <!-- Google fonts - Roboto -->
 
@@ -81,6 +83,10 @@
             display: flex;
         }
 
+        .nav-mobile {
+          display: none;
+        }
+
         .nav-container {
             display: block;
             /* border: 1px solid red; */
@@ -88,6 +94,14 @@
             overflow: hidden;
            padding-top: 1rem;
 
+        }
+
+        .mobile-view-menu{
+          display: none;
+        }
+
+        .mobile-view-menu-2{
+          display: none;
         }
 
         .nav-container-1 {
@@ -136,8 +150,10 @@
         }
 
         .top-nav-menu2 {
-            display: inline-flex;
+            display: flex;
             margin-top: 8px;
+            flex-wrap: wrap;
+            gap: 8px;
         }
 
         .top-nav-menu2 li {
@@ -171,48 +187,6 @@
 
         }
 
-
-
-/* Info */
-
-.info-container {
-  display: flex;
-  justify-content: center;
-  margin: 3rem 0 9rem 0;
-}
-
-.info-content {
-  display: flex;
-  justify-content: space-between;
-  width: 800px;
-  gap: 2rem;
-}
-
-.info-img {
-  width: 400px;
-  height: 250px;
-}
-
-.info-img img{
-  width: 400px;
-  height: 250px;
-}
-.info-subtitle{
-  margin-top: 1rem;
-}
-
-.info-text button{
-  border: none;
-  padding: 0.5rem 1rem;
-  color: white;
-  background: orange;
-  margin-top: 1.5rem;
-  font-weight: bold;
-  border-radius: 2.5px;
-  margin-left: 5rem;
-}
-
-
         .welcome-container {
             background-image: url('./images/slider-footer.png');
             height: 200px;
@@ -227,45 +201,7 @@
             padding-top: 120px;
             padding-left: 100px;
         }
-        /* .container {
-            padding-top: 50px;
-        }
-        .row {
-            height: auto;
-            display: flex;
-            width: 100%;
-            margin-left: 50px;
-            margin-right: 50px;
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 45px;
-        } */
-
-        /* .card {
-            border: 1px solid #111;
-            margin: 50px;
-            padding: 20px;
-        }
-
-        .card-cover {
-            width: 100%;
-            height: 200px;
-        }
-
-        .card-cover-img {
-            width: 100%;
-            height: 200px;
-        }
-
-        .card-content {
-            font-size: 20px;
-        }
-
-        .card-footer {
-
-        } */
+       
 
         #slider {
             margin-top: 100px;
@@ -273,327 +209,7 @@
 
         /* new article */
 
-        *{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-.news-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-}
-.news-content {
-  display: flex;
-  flex-direction: column;
-}
-.news-blog{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.news-blog p{
-  font-size: 1rem;
-  font-weight: bold;
-
-}
-.news-blog hr {
-  width: 5rem;
-  height: 1px;
-  background: red;
-  margin-left: 1rem;
-  border: none;
-}
-
-.news-articles-heading{
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-  margin-bottom: 3rem;
-}
-
-.news-articles-heading p {
-  font-size: 3rem;
-}
-
-.news-articles-cards {
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
-
-.article-card {
-  width: 350px;
-   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.article-card-img {
-  width: 348px;
-  overflow: hidden;
-  height: 200px;
-}
-.article-card-content {
-  display: flex;
-  flex-direction: column;
-}
-
-.article-card-comments {
-  display: flex;
-  gap:1rem;
-  padding: 1rem 2rem;
-  font-size: 0.85rem;
-}
-.article-card-heading{
-  font-size: 1.5rem;
-  padding: 0rem 2rem;
-
-}
-.article-card-readmore{
-  padding: 2rem 2rem;
-
-}
-.article-card-readmore p{
-  font-size: 0.65rem;
-  color: gray;
-  font-weight: bold;
-
-}
-
-.article-card-readmore span {
-  color: #FDBD44;
-  margin-right: 0.5rem
-}
-
-
-/* Donations */
-
-.donation-container {
-    display: flex;
-    justify-content: center;
-    margin: 5rem;
-  }
-
-  .donation-content {
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
-  }
-
-  .donation-card {
-    display: flex;
-    flex-direction: column;
-    width: 250px;
-    background: orange;
-    height: 200px;
-    justify-content: center;
-    text-align: center;
-    gap: 10px;
-    border-radius: 10px;
-  }
-
-    .donation-card button {
-      border: none;
-      padding: 0.5rem 1rem;
-      color: white;
-      background: #D35006;
-      margin-top: 0.75rem;
-      font-weight: bold;
-      border-radius: 2.5px;
-    }
-
-
-
-/* newsletter-subscribe */
-
-.newsletters-cantainer {
-  display: flex;
-  background-image: url('./images/Slice7.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  justify-content: center;
-  margin-top: 5rem;
-  /* background: orange; */
-  height: 250px;
-}
-
-.newsletter-content {
-  display: flex;
-  margin: 3rem;
-  justify-content: space-around;
-  gap: 5rem;
-}
-.newsletter-left {
-  width: 400px;
-}
-.newsletter-left p{
-  color: white;
-}
-
-.newsletter-left h1{
-  color: white;
-  margin-top: 0.5rem;
-}
-
-.subscribe-form {
-  background: white;
-  margin-top: 2rem;
-  height: 3rem;
-  align-items: center;
-  display: flex;
-  border-radius: 5px;
-}
-
-.subscribe-form input {
-  outline: none;
-  width: 80%;
-  border: none;
-  padding-left: 1rem;
-  height: 3rem;
-  border-radius: 5px;
-
-}
-
-.subscribe-form button {
-  outline: none;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  margin-right: 0.25rem;
-  background: #D35006;
-  color: white;
-  font-weight: bold;
-}
-
-.newsletter-right {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin-top: 1.25rem;
-}
-
-.newsletter-right img {
-    width: 100px;
-    height: 100px;
-    margin-left: 2.25rem;
-}
-
-.newsletter-right button{
-  outline: none;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  margin-right: 0.25rem;
-  background: #FDBD44;
-  color: black;
-  font-weight: bold;
-  margin-top: 2.25rem;
-  /* border-radius: 5px; */
-
-
-}
-
-/* footer */
-
-.footer-container {
-  display: flex;
-  justify-content: center;
-  background: black;
-  height: 300px;
-}
-
-.footer-content {
-  display: flex;
-  text-align: center;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 10rem;
-}
-
-.footer-heading {
-  color: white;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  font-weight: bold;
-}
-
-.footer-donate {
-  background: orange;
-  width: 300px;
-  /* display: flex; */
-  display: none;
-  flex-direction: column;
-  gap: 10rem;
-  height: 250px;
-  justify-content: center;
-  border-radius: 10px;
-}
-
-.footer-donate h1{
-  color: white;
-  font-weight: bold;
-  /* text-align: left; */
-}
-
-.footer-donate button {
-  outline: none;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 5px;
-  background: lightgreen;
-  color: white;
-  font-weight: bold;
-}
-
-.footer-links{
- display: flex;
-  gap: 3rem;
-}
-.footer-links ul {
-  list-style: none;
- display: block;
- float: left;
- text-align: left;
-}
-.footer-links ul li{
-  margin: 1rem;
-}
-.footer-links a{
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
-
-/* Rights reserved */
-
-.rights-container {
-  display: flex;
-  justify-content: center;
-    background: #D35006;
-    height: 50px;
-    align-items: center;
-}
-
-.rights-content {
-  display: flex;
-  width: 100%;
-  justify-content: flex-end;
-  margin: 0 3rem;
-}
-
-.copyright {
-  font-weight: bold;
-  color: white;
-    width: 45%;
-    text-align: left;
-}
-
-.social-links {
-  text-align: center;
-  display: flex;
-  gap: 1rem;
-}
+        
 
 
 
@@ -618,6 +234,270 @@
             padding: 10px;
             font-size: 20px;
         }
+
+        .welcome-title {
+    padding-top: 0px;
+}
+
+        @media (max-width: 1150px) {
+          .logo {
+      width: 150px;
+            height: 150px;
+    }
+
+    .nav-container-1 {
+            width: auto;
+            float: left;
+            margin-top: -10px;
+        }
+
+        .logo-text-1 {
+            color: yellow;
+            font-size: 40px;
+            text-align: center;
+        }
+        .logo-text-2 {
+            font-size: 1rem;
+        }
+
+        .nav-container-2 {
+            width: auto;
+            float: left;
+            line-height: 1;
+            border-left: 5px solid rgb(127, 72, 14);
+            margin-left: 0.5rem;
+        }
+
+        .logo-text-3 {
+          font-size: 1.75rem;
+    padding-top: 6px;
+    padding-left: 5px;
+    padding-bottom: 0px;
+        }
+
+        .skdslider {
+          margin-top: -75px;
+        }
+
+        .top-nav-menu li {
+    padding: 6px;
+    list-style-type: none;
+}
+
+.welcome-container {
+    margin-top: -75px;
+    padding-bottom: 1rem;
+}
+.welcome-title {
+    padding-top: 95px;
+}
+
+        }
+
+        @media (max-width: 775px) {
+
+          .nav-mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+            height: auto;
+            display: flex;
+            z-index: 999;
+            margin-bottom: 6.25rem;
+        }
+
+    .logo {
+      width: 50px;
+            height: 50px;
+    }
+    .nav-container-1 {
+            width: 300px;
+            float: left;
+            margin-top: 0px;
+        }
+
+    .logo-text-1 {
+            font-size: 2rem;
+    }
+
+    .logo-text-2 {
+            font-size: 12px;
+        }
+
+
+        .nav-container-2 {
+            width: 300px;
+            float: left;
+            line-height: 1;
+            border-left: 3px solid rgb(127, 72, 14);
+        }
+
+        .logo-text-3 {
+          font-size: 1.75rem;
+    padding-top: 6px;
+    padding-left: 5px;
+    padding-bottom: 6px;
+        }
+
+        .nav-container-3 {
+          width: auto;
+          margin-top: 1rem;
+          z-index: 999;
+        }
+
+        .mobile-view-menu {
+          display: block;
+          cursor: pointer;
+          margin-right: 0.6rem;
+        }
+
+        .mobile-view-menu-2 {
+          display: block;
+          cursor: pointer;
+          margin-right: 0.6rem;
+        }
+
+
+        .top-nav-menu {
+          display: none;
+}
+
+.top-nav-menu2 {
+  display: none;
+}
+
+
+.bottom-nav-menu-container {
+  display: flex;
+    width: 90%;
+            border-top: none;
+            background-color: white;
+            padding: 0.5rem 1rem;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+}
+
+.slide-navs{
+          display: none;
+        }
+        /* welcome */
+
+          .welcome-container {
+            background: lightyellow;
+            height: auto;
+            text-align: center;
+            margin-top: 0px;
+            opacity: 1;
+            z-index: 0;
+        }
+
+        .welcome-title {
+          font-size: 1.75rem;
+            color: black;
+            padding-top: 0px;
+            padding-left: 0px;
+            padding: 2rem;
+        }
+
+        .topNavList {
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          background-color: white;
+          right: 10px;
+          top: 3.5rem;
+          padding-left: 1rem;
+        }
+
+        .topNavList li{
+          border-bottom: 1px solid lightgray;
+          cursor: pointer;
+        }
+        .topNavList li a{
+          color: black;
+        }
+
+        .btmNavList {
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          background-color: white;
+          left: 5.15rem;
+          top: 7rem;
+          padding-left: 1rem;
+          z-index: 999;
+        }
+
+        .mobile-view-menu-2 {
+          cursor: pointer;
+        }
+
+        .btmNavList li{
+          border-bottom: 1px solid lightgray;
+          cursor: pointer;
+          width: 150px;
+    padding: 0.25rem;
+        }
+
+        .btmNavList li a{
+          color: black;
+          font-size: 0.75rem;
+        }
+        }
+
+        @media (max-width: 600px) {
+
+          .logo {
+      width: 30px;
+            height: 30px;
+    }
+          .nav-container-1 {
+            width: auto;
+            margin-left: 0.5rem;
+            
+        }
+
+    .logo-text-1 {
+            font-size: 1rem;
+    }
+
+    .logo-text-2 {
+            font-size: 10px;
+        }
+
+        .nav-container-2 {
+            width: auto;
+            float: left;
+            margin-left: 0.5rem;
+            line-height: 1;
+            border-left: 3px solid rgb(127, 72, 14);
+        }
+
+        .logo-text-3 {
+          font-size: 1rem;
+    padding-top: 6px;
+    padding-left: 5px;
+    padding-bottom: 6px;
+        }
+
+        .mobile-view-menu {
+          position: absolute;
+          right: 0.2rem;
+        }
+
+
+        
+        .topNavList {
+         
+          
+        }
+
+        .welcome-title {
+          font-size: 1.25rem;
+        }
+        }
     </style>
 </head>
 
@@ -637,8 +517,9 @@
                     <h1 class="logo-text-3"> Indo - Asian <br /> Metta Foundation </h1>
                 </div>
 
-                <div class="nav-container-3">
-                    <ul class="top-nav-menu">
+                <div class="nav-container-3 ">
+                  <div class="mobile-view-menu"><img src="./images/menu.png" alt=""></div>
+                    <ul class="top-nav-menu ">
                         <li>
                             <a href="/"> Economic Recovery Fund</a>
                         </li>
@@ -660,7 +541,8 @@
                     </ul>
                 </div>
             </div>
-            <div class="bottom-nav-menu-container">
+            <div class="bottom-nav-menu-container ">
+              <div class="mobile-view-menu-2"><img src="./images/menu.png" alt=""></div>
                 <ul class="top-nav-menu2">
                     <li>
                         <a href="/"> Home</a>
@@ -726,7 +608,7 @@
                       honored
                       and their needs are met with unconditional care.
               </p>
-              <a href="#"><button type="button" name="button">Donate</button></a>
+             <button type="button" name="button"> <a href="#"></a>Donate</a></button>
           </div>
         </div>
       </div>
@@ -960,6 +842,9 @@
   </div>
 
 </div>
+
+
+<script src="./js/app.js"></script>
     <script>
         $('#heroSlider').skdslider({
             slideSelector: '.slide',

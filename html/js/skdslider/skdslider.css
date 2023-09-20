@@ -7,7 +7,7 @@
   width:100%;
   position: relative;
   display: block;
-  overflow:hidden;
+  overflow:visible;
 }
 .skdslider .slide {
    display: none;
@@ -142,4 +142,14 @@
 	.skdslider .slide-desc > p a.more {
 		font-size:14px;
 	}
+	.skdslider {
+		width:100%;
+		position: relative;
+		display: block;
+		overflow:visible;
+	  }
+
+	  .slide-navs {
+		display: none;
+	  }
 }
